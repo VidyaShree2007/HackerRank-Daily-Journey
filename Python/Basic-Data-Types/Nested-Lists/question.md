@@ -1,4 +1,4 @@
-# Find the Runner-Up Score
+# Nested Lists
 
 **Platform:** HackerRank  
 **Language:** Python 3  
@@ -6,36 +6,51 @@
 
 ## Problem Summary
 
-Given a list of scores from a competition, find the second-highest distinct score (runner-up score).
+Given the names and grades of students, store the information in a nested list.
 
-If the list contains duplicate scores, consider each score only once before finding the runner-up.
+Find the second-lowest distinct grade and print the names of all students who received that grade in alphabetical order.
+
+Print each name on a separate line.
 
 ## Sample Input
 
 ```text
 5
-2 3 6 6 5
+Harry
+37.21
+Berry
+37.21
+Tina
+37.2
+Akriti
+41
+Harsh
+39
 ```
 
 ## Sample Output
 
 ```text
-5
+Berry
+Harry
 ```
 
 ## Explanation
 
-The given scores are `2, 3, 6, 6, 5`.
-
-1. Remove duplicate scores: `2, 3, 6, 5`.
-2. Sort the scores in ascending order: `2, 3, 5, 6`.
-3. The second-highest distinct score is `5`.
+1. Store each student's name and grade in a nested list.
+2. Extract all grades and remove duplicates using `set()`.
+3. Sort the grades in ascending order.
+4. Find the second-lowest grade.
+5. Select the students who received that grade.
+6. Sort their names alphabetically and print them.
 
 ## Concepts Learned
 
-- `input()` – reading user input
-- `int()` – converting input into integers
-- `map()` – converting multiple inputs
-- `set()` – removing duplicate values
-- `sorted()` – sorting values
-- Negative indexing (`[-2]`) – accessing the second-last element
+- Nested lists
+- `append()`
+- `float()`
+- `set()`
+- `sorted()`
+- List and generator comprehensions
+- Conditional statements
+- Alphabetical sorting
